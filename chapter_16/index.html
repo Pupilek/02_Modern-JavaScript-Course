@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <title>Chapter 16</title>
+</head>
+<body>
+  <div class="container my-5">
+    <h2>Recipes</h2>
+    <ul>
+      <!-- <li>Mushroom</li>
+      <li>Veg curry</li> -->
+    </ul>
+    <form>
+      <label for="recipe">Add a new recipe</label>
+      <div class="input-group">
+        <input type="text" class="form-control" id ="recipe" required>
+        <div class="input-group-append">
+          <input type="submit" value="add" class = "btn btn-outline-secondary">
+        </div>
+      </div>
+    </form>
+    <button>unsubscribe from changes</button>
+  </div>
+
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-firestore.js"></script>
+
+      <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+  <!-- <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-analytics.js"></script> -->
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyDjQ_iyE5BySwL-zztLK1IqhgqXgmfM6Xo",
+      authDomain: "udemy-modern-javascript-5f120.firebaseapp.com",
+      databaseURL: "https://udemy-modern-javascript-5f120.firebaseio.com",
+      projectId: "udemy-modern-javascript-5f120",
+      storageBucket: "udemy-modern-javascript-5f120.appspot.com",
+      messagingSenderId: "131085045742",
+      appId: "1:131085045742:web:4a8dda93ade24a350e48ff",
+      measurementId: "G-H4D9SB4MHZ"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    // firebase.analytics();
+    const db = firebase.firestore();
+  </script>
+  <script src = "sandbox.js"></script>
+</body>
+</html>
